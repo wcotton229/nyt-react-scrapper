@@ -22,8 +22,9 @@ It's a full stack application using node and express for the server, deployment 
 * Heroku - Deployment
 * NPM Packages - Small packages of reuseable code that pack a big punch (express, body-parser, express-handlebars, mongoose, cheerio, axios)
 
-## Author
-* William Cotton - wcotton229
+## Authors
+
+* **William Cotton** - *[wcotton229](https://github.com/wcotton229)*
 
 ## License
 
