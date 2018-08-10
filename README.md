@@ -1,19 +1,23 @@
-# New York Times Mongo Scrapper
-Mongo Scraper scrapes the New York Times and shows the title and summary. There's an option to save articles and, once saved, add notes. Notes and scraped article data is saved on Mongo via mongoose.
+# New York Times React Search
+React Search uses an API to get articles from the New York Times and components to show the articles. Articles can be saved into another component and the Mongo database.
 
-It's a full stack application using node and express for the server, deployment on Heroku, Mongo for the database, and Handlebars for the front-end. It follows a MVC (model view controller) design.
+Following the process all the way through:
+
+* Front end: The user clicks a button (pages/Articles.js) which calls an API CRUD action (utils/API.js) and moves server-side.
+* Back end: This (the utils/API.js from above) uses Axios to make API CRUD calls within the app (routes/api/articles.js). This routes the CRUD call to the specific method in the controllers/articlesController.js. This manipulates the article model for the database.
+
+It's a full stack application using node and express for the server, deployment on Heroku, Mongo for the database, and React.js for the front-end.
 
 ## Instructions
 
-1. Click "Scrape new articles" to scrape the New York Times website.
-2. Save the article or read it.
-3. Click "Saved Articles" to see the ones you saved.
-4. Add notes, delete them from saved, or read them.
+1. Enter in the topic, start year, and end year and click "search".
+2. Click the article to open in a new window and read it or click "Save Article" to move it to the Saved section.
+3. Saved articles can be removed from the app and database.
 
 ## Built With
 
 * JavaScript - Makes it interactive
-* Handlebars - Templating language
+* React - JavaScript library for building user interfaces
 * Bootstrap - Makes it pretty
 * Node - Executes JavaScript server-side
 * Express - Web framework for Node.js
